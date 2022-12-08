@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../reset.css" />
+  <link rel="stylesheet" href="../style.css" />
+  <script defer src="../script.js"></script>
+  <!--  <script src="/script.js"></script> -->
+  <title>My header for site</title>
+</head>
+
+<body>
+  <nav class="navbar">
+    <!-- навигация по сайту -->
+    <div class="container">
+      <!-- ограничивает контент по ширине и выравнивает по центру -->
+      <div class="navbar__wrap">
+        <!-- обертка для управление содержимым меню -->
+        <div class="hamb">
+          <!-- иконка бургера -->
+          <div class="hamb__field" id="hamb">
+            <!--  поле для срабатывания кнопки т е пользователю не нужно целится в бургер -->
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <!-- три линии которые напоминают меню бургер -->
+          </div>
+        </div>
+        <a href="#" class="main_sections" id="logo">Авторизация</a>
+
+
+        <a href="#" class="main_sections" id="new_event">Новое событие</a>
+        <ul class="menu" id="menu">
+          <!--    не упорядоченный список -->
+          <li><a href="#">Главная</a></li>
+          <li><a href="#">Мои события</a></li>
+          <li><a href="#">Календарь</a></li>
+          <li><a href="#">Про нас</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="popup" id="popup"></div>
+  <!-- окно которое выдвигается при нажатии на иконку бургер -->
+
+  
+  <!-- <header class="header">
+    <div class="container">
+      <div class="content">
+
+        <picture>
+          <source srcset="../../Незабудки для сайта/1649820357_70-vsegda-pomnim-com-p-nezabudka-tsvetok-foto-72.jpg" media="(max-width: 768px)">
+
+          картинка которая запускается если мениее 768px
+
+          <img src="../../Незабудки для сайта/незабудка_1.jpg" alt="Office" alt="Snow" style="width:100%;"
+            class="responsive" />
+
+        </picture>
+
+        <div class="text_pictures">
+          <h1> NotForget </h1>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+ -->
+  <!-- <header th:insert="blocks/header :: header"></header>
+
+  <main class="main">
+    <div class="container">
+      <div class="content">
+        <p>
+          NotForget - приложение для тех, кто помнит большинство своих текущих задач,
+          не хочет забыть события дальней перспективы, например, дни рождения/смерти близких и редко пользуются
+          календарем и ежедневником.
+        </p>
+        <p>
+          NotForget - пришлет напоминание на почту.
+        </p>
+
+      </div>
+    </div>
+  </main>
+
+  <div th:insert="blocks/footer :: footer"></div> -->
+
+</body>
+
+</html>

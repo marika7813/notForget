@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+    <!--  <script src="/script.js"></script> -->
+    <title>My header for site</title>
+</head>
+
+<body>
+
+    <!-- 
+    <header th:insert="blocks/header :: header"></header> -->
+    <div class="container">
+        <div>
+            <form action="server" method="post" enctype="multipart/form-data">
+                <br>
+                <p>Мой e-mail</p>
+                <input type="email" id="email_my">
+
+                <h2>Новое событие</h2>
+
+                <div class="param_switch">
+                    <p>Категория события</p>
+                    <input type="radio" class="category_birthday" value="День рожрения/смерти">День рожрения/смерти <br>
+                    <input type="radio" class="category_work" value="Рабочие">Рабочие<br>
+                    <input type="radio" class="category_family" value="Личные">Личные<br>
+                    <input type="radio" class="category_another" value="Другое">Другое<br>
+                </div>
+                
+                <p>Название события</p>
+                <input type="text" id="name_event"> <!-- title -->
+                
+                <p>Дата события</p>
+                <input type="date" id="date_event">
+                <p>Время события</p>
+                <input type="time" id="time_event">
+
+                <h3>Дополнительно</h3>
+                <h4>Контакты</h4>
+
+                <p>Телефон</p>
+
+                <input type="tel" class="contacts" id="phone" value=""> Телефон 1
+                <input type="tel" class="contacts" id="phone" value=""> Телефон 2
+                
+
+                <p>e-mail другого участника события</p>
+
+                <input type="email" class="contacts" id="email_his" value=""> e-mail участника события 1
+                <input type="email" class="contacts" id="email_his" value=""> e-mail участника события 2
+                
+                <p>Место</p>
+                <textarea class="contacts" id="location" cols="30" rows="10"></textarea>
+                <p>Комментарии</p>
+                <textarea id="comment" cols="30" rows="10"></textarea>
+
+                <p>Напомнить за</p>
+                <div class="param_switch">
+                    <input type="checkbox" class="rem_time"  value="1_day">1 день
+                    <input type="checkbox" class="rem_time"  value="1_hour">1 час
+                    <input type="checkbox" class="rem_time"  value="30_min">30 мин
+                    <input type="checkbox" class="rem_time"  value="10_min">10 мин
+                    <input type="checkbox" class="rem_time"  value="5_min">5 мин
+                    <input type="checkbox" class="rem_time"  value="2_min">2 мин
+                </div>
+                
+                <input type="submit" class="button_general" value="Напомнить мне">
+                
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
